@@ -4,6 +4,8 @@ Extract the GLO (glutathione disulphide) in PyMOL in to different lines,
 by clicking in the corresponding molecule and then (sele), action → extract to object.
 A new line appears called obj1, you can rename the (obj01)
 
+make sure to add the correct number of hydrogens to the the pdb and ligand file using the H++ server 
+
 1 Command - pdb4amber -i MouseCysGSSG.pdb -o MouseCysGSSG.pdb4amber.pdb
 #The resulting PDB file should now contain all of the hydrogens for each of the residues.
 
