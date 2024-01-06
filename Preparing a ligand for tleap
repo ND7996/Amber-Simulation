@@ -1,0 +1,26 @@
+## Preparation for tleap
+
+1 Command - pdb4amber -i MouseCysGSSG.pdb -o MouseCysGSSG.pdb4amber.pdb
+#The resulting PDB file should now contain all of the hydrogens for each of the residues.
+
+2 Command - antechamber -fi pdb -fo prepi -i GLO.pdb -o DM1.prepi -c bcc -at amber -nc 0 -rn GLO
+
+#fi and fo define the format of the input and output files, c specifies the model for the point charges, 
+and at specifies the atom type style for the molecule. -nc is net molecular charge.  -rn  residue name
+
+OUTPUT
+This quantum mechanics program allows the optimization of the molecule.
+After that, SQM performs a Mulliken population analysis and adds an empirical bond charge correction (bcc) term to 
+compute the final BCC point charges.
+
+3 Command - parmchk2 -f prepi -i GLO.prepi -o GLO.frcmod
+
+OUTPUT
+GLO.prep.pdb, GLO.prepi, GLO.frcmod
+
+The frcmod file contains
+1. Mass
+2. Bonds
+3. Angles
+4. Dihedrals
+5. Improper
