@@ -1,18 +1,5 @@
-# Simulation_prep
+ Preparing a protein for simulation
 
-## Amber tleap Preparation Commands
+ Running simulation 
 
-## Minimization
-
-## Heating the system
-
-## Equilibration
-
-## MD Production
-
-## Running simulation 
-
-## Visualization of trajectory files using pyMOL
-
-## Making a movie from an AMBER trajectory using VMD
 
