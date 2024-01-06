@@ -1,5 +1,5 @@
- Preparing a protein for simulation
+Parametrization of a ligand 
 
- Script for Running simulation 
+run.sh - Script for Running simulation 
 
 
