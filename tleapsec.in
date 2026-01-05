@@ -3,12 +3,14 @@ source leaprc.gaff2
 source leaprc.water.opc
 loadAmberParams PRX.frcmod
 loadAmberPrep PRX.prepi
-sys = loadPDB HumanCys.pdb
+loadAmberParams SecSeH.frcmod
+loadAmberPrep SecSeH.off
+sys = loadPDB HumanSec.pdb
 addIons2 sys Na+ 0
 addIons2 sys Cl- 0 
 SolvateOct sys OPCBOX 25 
-savePDB sys HumanCysH.pdb
-SaveAmberParm sys HumanCysH.prmtop HumanCysH.inpcrd 
+savePDB sys HumanSecH.pdb
+SaveAmberParm sys HumanSecH.prmtop HumanSecH.inpcrd 
 quit
 
 
